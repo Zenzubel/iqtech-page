@@ -1,129 +1,35 @@
 @font-face {
-    font-family: 'Oswald-Light';
-    src: url('../fonts/Oswald-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald-Medium';
-    src: url('../fonts/Oswald-Medium.woff2') format('woff2');
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald-Bold';
-    src: url('../fonts/Oswald-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald-ExtraLight';
-    src: url('../fonts/Oswald-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald-Regular';
-    src: url('../fonts/Oswald-Regular.woff2') format('woff2');
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Oswald-SemiBold';
-    src: url('../fonts/Oswald-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Italic';
-    src: url('../fonts/NotoSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Bold';
-    src: url('../fonts/NotoSans-Bold.woff2') format('woff2');
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'NotoSans-Black';
-    src: url('../fonts/NotoSans-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Light';
-    src: url('../fonts/NotoSans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-SemiBold';
-    src: url('../fonts/NotoSans-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Thin';
-    src: url('../fonts/NotoSans-Thin.woff2') format('woff2');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Medium';
-    src: url('../fonts/NotoSans-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-Regular';
-    src: url('../fonts/NotoSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'NotoSans-ExtraBold';
-    src: url('../fonts/NotoSans-ExtraBold.woff2') format('woff2');
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+        url('../fonts/Roboto-Black.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'NotoSans-ExtraLight';
-    src: url('../fonts/NotoSans-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-
