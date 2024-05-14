@@ -18,3 +18,13 @@
 	transform: translateX(-50%);
 	overflow: hidden;
 }
+
+.heading-style {
+	font-size: 36px;
+	line-height: 40 / 36 * 100%;
+	font-family: $RobotoBold;
+
+	@media (max-width: $container-width) {
+		font-size: calc(25px + (36 - 25) * ((100vw - 320px) / (#{$container-calc} - 320)));
+	};
+}
