@@ -253,10 +253,6 @@
 			font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (#{$container-calc} - 320)));
 		};
 	}
-	// .about__list
-	&__list {
-		
-	}
 	// .about__paragraf
 	&__paragraf {
 
@@ -295,8 +291,6 @@
 			background-position: center;
 			background-size: cover;
 			transition: all 0.3s ease 0s;
-
-			
 		}
 
 		&.active {
@@ -311,13 +305,13 @@
 
 		@media (any-hover: hover){
 
-				&:hover {
-					
-					&:before {
-						left: -4px;
-					}
+			&:hover {
+				
+				&:before {
+					left: -4px;
 				}
-			};
+			}
+		};
 	}
 	// .about__drop-box
 	&__drop-box {
@@ -443,9 +437,6 @@
 	&__block {
 		flex: 1 0 auto;
 	}
-	// .learn__heading
-	&__heading {
-	}
 	// .learn__list
 	&__list {
 		margin: 38px 0;
@@ -453,9 +444,6 @@
 		@media (max-width: $media-480) {
 			margin: 30px 0;
 		};
-	}
-	// .learn__list-item
-	&__list-item {
 	}
 	// .learn__link-box
 	&__link-box {
@@ -557,10 +545,6 @@
 			padding: 50px 0;
 		};
 	}
-	// .base__inner
-	&__inner {
-		
-	}
 	// .base__container-fluid
 	&__container-fluid {
 		max-width: 1485px;
@@ -593,10 +577,6 @@
 		// .base__item--image
 		&--image {
 			position: relative;
-
-			@media (max-width: $media-1366) {
-				
-			};
 		}
 
 		@media (max-width: $media-1366) {
@@ -625,9 +605,6 @@
 		@media (max-width: $container-width) {
 			font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (#{$container-calc} - 320)));
 		};
-	}
-	// .base__title
-	&__title {
 	}
 	// .base__list
 	&__list {
@@ -812,12 +789,6 @@
 			padding-bottom: calc(50px + (71 - 50) * ((100vw - 320px) / (#{$container-calc} - 320)));
 		};
 	}
-	// .offer__inner
-	&__inner {
-	}
-	// .offer__hading
-	&__hading {
-	}
 	// .offer__row
 	&__row {
 		display: flex;
@@ -850,13 +821,6 @@
 				margin: 20px 0 0 auto;
 			};
 		}
-	}
-	// .offer__bg-box
-	&__bg-box {
-
-	}
-	// .offer__bg
-	&__bg {
 	}
 	// .offer__subject
 	&__subject {
@@ -922,9 +886,6 @@
 	&__link-box {
 		text-align: center;
 	}
-	// .offer__link
-	&__link {
-	}
 }
 // end offer
 // start footer
@@ -939,5 +900,4 @@
 		};
 	}
 }
-
 // end footer
