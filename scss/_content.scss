@@ -295,15 +295,29 @@
 			background-position: center;
 			background-size: cover;
 			transition: all 0.3s ease 0s;
+
+			
 		}
 
 		&.active {
+			cursor: default;
 			padding: 0 0 10px 33px;
 
 			&:before {
+				left: -4px;
 				transform: translateY(-50%) rotate(-180deg);
 			}
 		}
+
+		@media (any-hover: hover){
+
+				&:hover {
+					
+					&:before {
+						left: -4px;
+					}
+				}
+			};
 	}
 	// .about__drop-box
 	&__drop-box {
@@ -689,9 +703,30 @@
 	}
 	// .base__link
 	&__link {
-		text-decoration: underline;
+		position: relative;
+		text-decoration: none;
 		font-family: $RobotoBold;
 		color: $color-text-orange;
+
+		&:before {
+			position: absolute;
+			content: "";
+			bottom: 3px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $color-text-orange;
+			transition: all 0.3s ease 0s;
+		}
+
+		@media (any-hover: hover){
+			&:hover {
+				
+				&:before {
+					width: 0;
+				}
+			}
+		};
 	}
 	// .base__button-link
 	&__button-link {
