@@ -354,9 +354,325 @@
 			text-align: center;
 		};
 	}
-	// .about__link
-	&__link {
-	}
 }
 // end about
+// start learn
+.learn {
+	// .learn__wrapper
+	&__wrapper {
+		padding-top: 108px;
+		padding-bottom: 102px;
+
+		@media (max-width: $media-1366) {
+			padding: 0;
+		};
+	}
+	// .learn__inner
+	&__inner {
+		position: relative;
+
+		@media (max-width: $media-1366) {
+
+			padding-top: 80px;
+			padding-bottom: 80px;
+
+			@media (max-width: $container-width) {
+				padding-top: calc(50px + (80 - 50) * ((100vw - 320px) / (#{$container-calc} - 320)));
+				padding-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (#{$container-calc} - 320)));
+			};
+		};
+	}
+	// .learn__body
+	&__body {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 44.5%;
+		height: 100%;
+		padding: 0 15px;
+
+		@media (max-width: $media-1366) {
+			position: static;
+			height: auto;
+			width: 50%;
+			margin: 0 0 0 auto;
+		};
+
+		@media (max-width: $media-991) {
+			width: 70%;
+			margin: 0 auto 0 0;
+		};
+
+		@media (max-width: $media-480) {
+			width: 100%;
+		};
+	}
+	// .learn__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 100%;
+		padding-top: 88px;
+		padding-bottom: 79px;
+
+		@media (max-width: $container-width) {
+			padding-top: calc(0px + (88 - 0) * ((100vw - 320px) / (#{$container-calc} - 320)));
+			padding-bottom: calc(0px + (79 - 0) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+
+		@media (max-width: $media-1366) {
+			padding: 0;
+		};
+	}
+	// .learn__block
+	&__block {
+		flex: 1 0 auto;
+	}
+	// .learn__heading
+	&__heading {
+	}
+	// .learn__list
+	&__list {
+		margin: 38px 0;
+
+		@media (max-width: $media-480) {
+			margin: 30px 0;
+		};
+	}
+	// .learn__list-item
+	&__list-item {
+	}
+	// .learn__link-box
+	&__link-box {
+		flex: 0 0 auto;
+		text-align: center;
+
+		@media (max-width: $media-991) {
+			text-align: left;
+		};
+
+		@media (max-width: $media-480) {
+			text-align: center;
+		};
+	}
+	// .learn__bg-box
+	&__bg-box {
+		transform: translateX(-34%);
+
+		@media (max-width: 1580px) {
+			transform: translateX(-60%);
+		};
+
+		@media (max-width: $media-1366) {
+			position: absolute;
+			z-index: -1;
+			top: 50%;
+			left: -50%;
+			width: 100%;
+			transform: translate(0, -50%);
+		};
+
+		@media (max-width: $media-991) {
+			left: auto;
+			right: -50%;
+			transform: translate(0, -50%) scale(-1, 1);
+		};
+
+		@media (max-width: $media-480) {
+			display: none;
+		};
+	}
+	// .learn__bg
+	&__bg {
+
+		& source, img {
+
+			@media (max-width: $media-1366) {
+				max-width: 100%;
+				object-fit: cover;
+				object-position: center;
+			};
+		}
+	}
+}
+// end learn
+// start list
+.list {
+	font-family: $RobotoRegular;
+	font-size: 20px;
+	line-height: 24 / 20 * 100%;
+
+	@media (max-width: $container-width) {
+		font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (#{$container-calc} - 320)));
+	};
+	// .list__item
+	&__item {
+		position: relative;
+		padding-left: 34px;
+
+		&:before {
+			position: absolute;
+			content: "";
+			top: 7px;
+			left: 7px;
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background-color: $color-text-orange;
+		}
+
+		+ .list__item  {
+			margin-top: 24px;
+
+			@media (max-width: $container-width) {
+				margin-top: calc(12px + (24 - 12) * ((100vw - 320px) / (#{$container-calc} - 320)));
+			};
+		}
+	}
+}
+// end list
+// start base
+.base {
+	// .base__wrapper
+	&__wrapper {
+		position: relative;
+		background-color: $color-bg;
+	}
+	// .base__inner
+	&__inner {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		height: 100%;
+	}
+	// .base__container-fluid
+	&__container-fluid {
+		max-width: 1485px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	// .base__content
+	&__content {
+		position: relative;
+		z-index: 2;
+		display: flex;
+	}
+	// .base__about
+	&__about {
+		padding-top: 74px;
+
+		@media (max-width: $container-width) {
+			padding-top: calc(50px + (74 - 50) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__item
+	&__item {
+		flex: 0 1 50%;
+		// .base__item--image
+		&--image {
+			position: relative;
+		}
+	}
+	&__title, 
+	&__list, 
+	&__text {
+		color: $white;
+	}
+
+	&__list, 
+	&__text, 
+	&__link {
+		font-size: 20px;
+		line-height: 26 / 20 * 100%;
+
+		@media (max-width: $container-width) {
+			font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__title
+	&__title {
+	}
+	// .base__list
+	&__list {
+		padding: 0 0 0 27px;
+		margin-top: 52px;
+
+		@media (max-width: $container-width) {
+			margin-top: calc(30px + (52 - 30) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__list-item
+	&__list-item {
+
+		+ .base__list-item {
+			margin-top: 4px;
+		}
+	}
+	// .base__text
+	&__text {
+		margin-top: 30px;
+		margin-bottom: 61px;
+		font-family: $RobotoMedium;
+		@media (max-width: $container-width) {
+			margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (#{$container-calc} - 320)));
+			margin-bottom: calc(30px + (61 - 30) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__link-box
+	&__link-box {
+		margin-top: 39px;
+		text-align: left;
+
+		@media (max-width: $container-width) {
+			margin-top: calc(25px + (39 - 25) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__button-link-box
+	&__button-link-box {
+		margin-top: 42px;
+		transform: translateX(21px);
+
+		@media (max-width: $container-width) {
+			margin-top: calc(30px + (42 - 30) * ((100vw - 320px) / (#{$container-calc} - 320)));
+		};
+	}
+	// .base__link
+	&__link {
+		text-decoration: underline;
+		font-family: $RobotoBold;
+		color: $color-text-orange;
+	}
+	// .base__button-link
+	&__button-link {
+		color: $white;
+	}
+	// .base__item-bg-box
+	&__item-bg-box {
+		transform: translate(2%, -4%);
+	}
+	// .base__questions
+	&__questions {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-42%, -63%);
+	}
+	// .base__questions-head
+	&__questions-head {
+		text-transform: uppercase;
+		text-align: center;
+		color: $color-gray;
+	}
+	// .base__bg-box
+	&__bg-box {
+
+	}
+	// .base__bg
+	&__bg {
+	}
+}
+// end base
 

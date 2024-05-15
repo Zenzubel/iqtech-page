@@ -28,3 +28,11 @@
 		font-size: calc(25px + (36 - 25) * ((100vw - 320px) / (#{$container-calc} - 320)));
 	};
 }
+
+.img-style {
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+	font-size: 0;
+	vertical-align: top;
+}
