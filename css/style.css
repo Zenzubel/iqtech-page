@@ -159,6 +159,8 @@ body.lock {
   color: white;
   font-family: "Roboto-Bold";
   font-size: 20px;
+  transition: all 0.3s ease 0s;
+  transform: translateY(0);
 }
 
 .bg-container {
@@ -1028,5 +1030,11 @@ body.lock {
 
   .base__bg-box {
     transform: translateX(-45%);
+  }
+}
+
+@media (any-hover: hover) {
+  .button-style:hover {
+    transform: translateY(-3px);
   }
 }

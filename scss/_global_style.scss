@@ -8,6 +8,14 @@
 	color: $white;
 	font-family: $RobotoBold;
 	font-size: 20px;
+	transition: all 0.3s ease 0s;
+	transform: translateY(0);
+
+	@media (any-hover: hover){
+		&:hover {
+			transform: translateY(-3px);
+		}
+	};
 }
 
 .bg-container {
